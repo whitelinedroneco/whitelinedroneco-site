@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio – WhiteLine Drone Co.</title>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/photoswipe@5/dist/photoswipe.css">
+  <meta name="description" content="Explore our portfolio of aerial photographs and videos.">
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">
+        <a href="/"><img src="/assets/img/logo.png" alt="WhiteLine Drone Co. logo"></a>
+      </div>
+      <div class="menu-toggle" aria-label="Open navigation menu"><i class="fas fa-bars"></i></div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/portfolio.html">Portfolio</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section>
+      <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <p style="text-align:center; max-width:800px; margin:0 auto 3rem auto;">A selection of our recent aerial photographs and sample footage. Click on any image to zoom in and explore the details.</p>
+        <div id="portfolio-gallery" class="gallery">
+          <!-- Each link wraps a high‑resolution image for PhotoSwipe; the thumbnail is lazy‑loaded by the browser -->
+          <a href="https://source.unsplash.com/1200x800/?drone,aerial&sig=1" data-pswp-width="1200" data-pswp-height="800">
+            <img src="https://source.unsplash.com/600x400/?drone,aerial&sig=1" alt="Aerial drone capture 1" loading="lazy">
+          </a>
+          <a href="https://source.unsplash.com/1200x800/?drone,landscape&sig=2" data-pswp-width="1200" data-pswp-height="800">
+            <img src="https://source.unsplash.com/600x400/?drone,landscape&sig=2" alt="Aerial drone capture 2" loading="lazy">
+          </a>
+          <a href="https://source.unsplash.com/1200x800/?drone,city&sig=3" data-pswp-width="1200" data-pswp-height="800">
+            <img src="https://source.unsplash.com/600x400/?drone,city&sig=3" alt="Aerial drone capture 3" loading="lazy">
+          </a>
+          <a href="https://source.unsplash.com/1200x800/?drone,ocean&sig=4" data-pswp-width="1200" data-pswp-height="800">
+            <img src="https://source.unsplash.com/600x400/?drone,ocean&sig=4" alt="Aerial drone capture 4" loading="lazy">
+          </a>
+          <a href="https://source.unsplash.com/1200x800/?drone,mountains&sig=5" data-pswp-width="1200" data-pswp-height="800">
+            <img src="https://source.unsplash.com/600x400/?drone,mountains&sig=5" alt="Aerial drone capture 5" loading="lazy">
+          </a>
+          <a href="https://source.unsplash.com/1200x800/?drone,forest&sig=6" data-pswp-width="1200" data-pswp-height="800">
+            <img src="https://source.unsplash.com/600x400/?drone,forest&sig=6" alt="Aerial drone capture 6" loading="lazy">
+          </a>
+        </div>
+        <h3 style="font-family:'Merriweather', serif; margin-top:4rem;">Sample Videos</h3>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/x8UbGtm93yM" title="Sample drone video 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/Gs09sFXx4BY" title="Sample drone video 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="social-links">
+        <a href="https://www.instagram.com/whitelinedroneco/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61583462636953&sk=photos" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/company/109654018/admin/dashboard/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p>&copy; <span id="current-year"></span> WhiteLine Drone Co. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="/assets/js/site.js"></script>
+  <script src="https://unpkg.com/photoswipe@5/dist/photoswipe.umd.js"></script>
+  <script src="https://unpkg.com/photoswipe@5/dist/photoswipe-lightbox.umd.js"></script>
+  <script>
+    // Initialize PhotoSwipe gallery on this page
+    document.addEventListener('DOMContentLoaded', function () {
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: '#portfolio-gallery',
+        children: 'a',
+        pswpModule: PhotoSwipe
+      });
+      lightbox.init();
+    });
+  </script>
+</body>
+</html>

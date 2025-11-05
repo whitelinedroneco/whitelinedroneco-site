@@ -1,0 +1,7 @@
+# robots.txt for WhiteLine Drone Co.
+# Allow all crawlers full access to the site and specify the sitemap location.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://whitelinedrone.co/sitemap.xml

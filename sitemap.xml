@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!--
+    Basic XML sitemap for GitHub Pages. Each URL should be absolute and
+    reference the final production domain. Update the domain if your site is
+    hosted elsewhere. Search engines use this file to discover pages.
+  -->
+  <url>
+    <loc>https://whitelinedrone.co/</loc>
+  </url>
+  <url>
+    <loc>https://whitelinedrone.co/about.html</loc>
+  </url>
+  <url>
+    <loc>https://whitelinedrone.co/services.html</loc>
+  </url>
+  <url>
+    <loc>https://whitelinedrone.co/portfolio.html</loc>
+  </url>
+  <url>
+    <loc>https://whitelinedrone.co/contact.html</loc>
+  </url>
+  <url>
+    <loc>https://whitelinedrone.co/404.html</loc>
+  </url>
+</urlset>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <title>Contact — WhiteLine Drone Co.</title>
+  <meta name=\"description\" content=\"Contact WhiteLine Drone Co. for quotes, scheduling, and availability.\">
+
+  <meta charset=\"utf-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
+  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
+  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>
+  <link href=\"https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;500;600&display=swap\" rel=\"stylesheet\">
+  <link rel=\"stylesheet\" href=\"assets/styles.css\">
+
+</head>
+<body>
+
+  <header>
+    <div class=\"wrap nav\">
+      <div class=\"logo\">
+        <span class=\"logo-dot\" aria-hidden=\"true\"></span>
+        <a href=\"index.html\" style=\"color:inherit;text-decoration:none;\"><span>WhiteLine Drone Co.</span></a>
+      </div>
+      <button class=\"menu-btn\" aria-label=\"Toggle menu\">Menu</button>
+      <nav aria-label=\"Primary Navigation\">
+        <ul>
+          <li><a href=\"index.html\">Home</a></li>
+          <li><a href=\"services.html\">Packages</a></li>
+          <li><a href=\"portfolio.html\">Portfolio</a></li>
+          <li><a href=\"about.html\">About</a></li>
+          <li><a href=\"contact.html\">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class=\"wrap\" style=\"padding:64px 0\">
+    <h1>Contact</h1>
+    <p class=\"section-lead\">Tell us what you need and your ideal timeline. We’ll confirm airspace, pricing, and deliverables before flying.</p>
+    <div class=\"contact\">
+      <form action=\"https://formspree.io/f/your-endpoint\" method=\"POST\">
+        <div>
+          <label for=\"name\">Name</label>
+          <input id=\"name\" name=\"name\" placeholder=\"Your name\" required>
+        </div>
+        <div class=\"grid\" style=\"grid-template-columns:1fr 1fr;gap:12px\">
+          <div>
+            <label for=\"email\">Email</label>
+            <input id=\"email\" type=\"email\" name=\"email\" placeholder=\"you@example.com\" required>
+          </div>
+          <div>
+            <label for=\"phone\">Phone</label>
+            <input id=\"phone\" name=\"phone\" placeholder=\"(731) 420-4815\">
+          </div>
+        </div>
+        <div>
+          <label for=\"service\">Service</label>
+          <select id=\"service\" name=\"service\">
+            <option>Real Estate Aerials</option>
+            <option>Construction Progress</option>
+            <option>Events & Marketing</option>
+            <option>Other / Not sure</option>
+          </select>
+        </div>
+        <div>
+          <label for=\"message\">Message</label>
+          <textarea id=\"message\" name=\"message\" placeholder=\"Tell us about your project, location, and timing\"></textarea>
+        </div>
+        <input type=\"hidden\" name=\"_subject\" value=\"New inquiry — WhiteLine Drone Co.\" />
+        <button class=\"btn\" type=\"submit\">Send Inquiry</button>
+        <p style=\"margin:6px 0 0;color:var(--sub);font-size:.9rem\">Prefer phone? Call <strong>(731) 420‑4815</strong> or email <strong>info@whitelinedrone.co</strong>.</p>
+      </form>
+      <div>
+        <div class=\"hero-card\" style=\"height:100%\">
+          <img src=\"https://images.pexels.com/photos/195709/pexels-photo-195709.jpeg?auto=compress&cs=tinysrgb&w=1600\" alt=\"Service area aerial\" />
+          <div style=\"padding:12px 4px 2px;color:var(--sub)\">
+            <p><strong>Service area:</strong> Murfreesboro • Nashville • Middle TN</p>
+            <p><strong>Hours:</strong> Mon–Sat, by appointment</p>
+            <p><strong>FAA:</strong> Part 107 Remote Pilot</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    <div class=\"wrap\" style=\"display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap\">
+      <div>© <span id=\"y\"></span> WhiteLine Drone Co.</div>
+      <div><a href=\"#\">Terms</a> · <a href=\"#\">Privacy</a></div>
+    </div>
+    <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+    <script src=\"assets/site.js\"></script>
+  </footer>
+
+</body>
+</html>

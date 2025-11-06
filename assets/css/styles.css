@@ -48,8 +48,10 @@ header {
   margin: 0 auto;
 }
 
+/* Increase the size of the logo in the navigation bar. A taller logo
+   helps it stand out without overwhelming the nav. */
 .logo img {
-  height: 48px;
+  height: 72px;
 }
 
 nav {
